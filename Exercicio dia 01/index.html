@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Validador de Senha</h2>
+    <input type="password" id="senha" placeholder="Digite a senha">
+    <button onclick="validarSenhas()">Validar</button>
+    <p id="resultado"></p>
+
+    <script>
+        function validarSenhas(){
+            const senhaUsuario = document.getElementById(senha);
+            credenciais=(
+                senha= "1234"
+            )
+            if(senhaUsuario == credenciais.senha){
+                alert("Senha validada e correta!")
+            }else{
+                alert("Senha invalida ou incorreta!")
+            }
+        }
+    </script>
+
+</body>
+</html>
