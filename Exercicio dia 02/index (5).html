@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contador de Vogais</title>
+</head>
+<body>
+    <h2>Contador de Vogais</h2>
+    <input type="text" id="texto" placeholder="Digite um texto">
+    <button onclick="contaVogais()">Contar Vogais</button>
+    <p id="resultado"></p>
+
+    <script>
+        function contaVogais(){
+            let vogais= document.getElementById('texto').value;
+            let separar = vogais.match(/[a,e,i,o,u]/g)
+            let soma = separar ? separar.length : 0;
+
+            console.log("vogais",vogais)
+            console.log("vogais",separar)
+            console.log("soma das vogais",soma)
+        }
+    </script>
+</body>
+</html>
