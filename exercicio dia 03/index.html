@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inversor de String</title>
+</head>
+<body>
+    <h2>Inversor de String</h2>
+    <input type="text" id="texto" placeholder="Digite um texto">
+    <button onclick="inverter()">Inverter</button>
+    <p id="resultado"></p>
+
+    <script>
+        function inverter() {
+            let string = document.getElementById("texto").value
+            let reverso = string.split('') .reverse().join('');
+            document.write("Isso foi digitado: ",string,"<br>")
+            document.write("Esse foi o resultado: ",reverso)
+
+        }
+    </script>
+</body>
+</html>
